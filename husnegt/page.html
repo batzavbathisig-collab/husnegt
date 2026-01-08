@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        .book-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px , 1fr));
+            gap: 25px;
+            padding: 20px;
+        }
+        .book-card {
+            text-align: center;
+        }
+        body {
+            background:rgb(179, 245, 255);
+            color:  ;
+            font-family: Arial ;
+            padding: 30px;
+        }
+        img {
+            width: 300px;
+            border-radius: 15px;
+            box shadow: 0 10px 30px ;
+        }
+        body{
+            background-image: url('Studio_Ghibli.jpeg');
+            background-repeat: no-repeat;
+            background-attachment: fixed; 
+            background-size: 100% 100%;
+        }
+        .car-container {
+            position: relative;
+            width: 100%;
+            height: 100px;
+            margin: 20px auto;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+        #car {
+            position: absolute;
+            bottom: 10px;
+            left: -120px;
+            height: 75px;
+            transition: left 0.1s linear;
+        }
+        .button {
+            background-color: #04AA6D;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+        .size {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px , 1fr));
+            gap: 25px;
+            padding: 20px;
+        }
+    </style>
+    <head>It is a page</head>
+    <body>
+        <div>
+            <h1 style="background-color: aquamarine;text-align:">Ghibli in Mongolia</h1>
+            <img src="GhbliOrMongolia.jpeg" width="400" height="300">
+            <a href="https://www.youtube.com/shorts/Rl0X9GbxtfU">Click to watch</a>
+            <h2>Wind in the fields of Mongolia or Studio Ghibli IRL</h2>
+            <h1 style="background-color: aquamarine;text-align:">The intreseting fact of GHibli in Mongolia</h1>
+        </div>
+    <div class=" book-container">
+        <div class="book-card">
+            <h2>Fact 1</h2>
+            <img src="FactTotoro.jpeg" width="400" height="300">
+            <a href="https://www.youtube.com/watch?v=ARl2sm6abRo">Click to watch</a>
+            <h3>Миний хөрш Тоторо ба Саяамагын хэрэг </h3>
+        </div>
+        <div class="book-card">
+            <h2>Fact 2</h2>
+            <img src="Princess-Mononoke.jpeg" width="400" height="300">
+            <a href="https://www.youtube.com/watch?v=VoOkoGQxe3k">Click to watch</a>
+            <h3>Мононокэ гүнж - цаад утга, сонирхолтой баримтууд</h3>
+        </div>
+        <div class="book-card">
+            <h2>Fact 3</h2>
+            <img src="Characters.jpeg" width="200" height="300">
+            <a href="https://www.youtube.com/watch?v=Ev4RfxTsRno">Click to watch</a>
+            <h3>Ghibli-н дүрүүд яагаад эмэгтэй байдаг вэ?</h3>
+        </div>
+        <div class="book-card">
+            <h2>Fact 4</h2>
+            <img src="Flying.jpeg" width="400" height="300">
+            <a href="https://www.youtube.com/watch?v=9G7dj-syWXE">Click to watch</a>
+            <h3>Хаулын явдаг цайз - Үйл явдал, далд утга</h3>
+        </div>
+    </div>
+    <div >
+    <div class="car-container">
+        <img id="car" src="TotoroMoving.jpeg" alt="car1">
+    </div>
+    <script>
+        const Arrow = document.getElementById("car");
+        let pos = -120;
+
+        function movecar() {
+            pos += 5;
+            if(pos > window.innerWidth) pos=-120;
+            car.style.left = pos + "px";
+            requestAnimationFrame(movecar);
+        }
+
+        movecar();
+    </script>
+    <button href="NextPage.html" type="button" class="button">NextPage</button>
+    </div>
+    </body>
+    <footer style="background-color: aquamarine; text-align: center; color: rgb(0, 119, 255);">
+        <h1>It is end of the end</h1>
+    </footer>
+</html>

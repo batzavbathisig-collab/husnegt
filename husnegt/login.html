@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <meta charset = "UTF-8">
+    <title>Enter</title>
+    <head>
+    <style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background: linear-gradient(135deg, #4facfe, #00f2fe);
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .login-box {
+        background: #ffffff;
+        padding: 30px;
+        width: 320px;
+        border-radius: 10px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    }
+    .login-box h2 {
+        text-align: center;
+        margin-bottom: 25px;
+        color:aquamarine;
+    }
+    .login-box input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 14px;
+    }
+    .login-box button {
+        width: 100;
+        padding: 10px;
+        background: lightblue;
+        border: none;
+        color: white;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .login-box button:hover {
+        background: #00c6ff;
+    }
+    .login-box .text {
+        text-align: center;
+        margin-top: 15px;
+        font-size: 13px;
+    }
+    .login-box .text a {
+        color: #4facfe;
+        text-decoration: none;
+    }
+    </style>
+    </head>
+    <body>
+        <div classs="login-box">
+            <h2>Enter</h2>
+            <form>
+                <input type="text" placeholder="username" required>
+                <input type="password" placeholder="password" required>
+                <button type="">Enter</button>
+            </form>
+            <div class="text">
+                <p>Don't have an account?<a href="#">Sign in</a></p>
+            </div>
+        </div>
+    </body>
+</html>
