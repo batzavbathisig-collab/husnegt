@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "../TeenCoder Batkhishig"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "../husnegt"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "husnegt"
+	}
+}
